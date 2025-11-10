@@ -1,7 +1,7 @@
 const NavMenu = () => {
     return (
         <nav className="py-6">
-            <ul className="flex justify-between px-12">
+            <ul className="flex justify-between px-12 h-[10dvh]">
                 <li>
                     Link 1
                 </li>

@@ -12,10 +12,10 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <>
+  return <main className="flex flex-col justify-center items-center self-center">
     <Link to="choices">
-      Enter the site
+      Welcome to Harry Potter Universe
     </Link>
     <h1>Test</h1>
-  </>
+  </main>
 }
