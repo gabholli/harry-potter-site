@@ -3,7 +3,7 @@ import type { Route } from "./+types/home";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Harry Potter Site" },
+    { title: "Harry Potter Site - Home" },
     {
       name: "A website showing information about the Harry Potter universe",
       content: "Find the latest about Harry Potter!"
@@ -12,9 +12,9 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <main className="flex flex-col justify-center items-center self-center">
+  return <main className="flex flex-col justify-center items-center min-h-dvh">
     <Link to="choices">
-      Welcome to Harry Potter Universe
+      Welcome to the Harry Potter Universe
     </Link>
     <h1>Test</h1>
   </main>

@@ -1,7 +1,8 @@
 const NavMenu = () => {
     return (
-        <nav className="py-6">
-            <ul className="flex justify-between px-12 h-[10dvh]">
+        <nav className="py-6 border-b-2 border-black">
+            <ul className="flex justify-between md:justify-end md:gap-12
+                px-12 h-[10dvh]">
                 <li>
                     Link 1
                 </li>
