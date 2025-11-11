@@ -2,8 +2,8 @@ import { Link } from "react-router"
 
 const NavMenu = () => {
     return (
-        <nav className="py-6 border-r-2 border-black">
-            <ul className="flex flex-col justify-center md:gap-12
+        <nav className="py-6 border-b-2 lg:border-r-2 border-black">
+            <ul className="flex lg:flex-col justify-center md:gap-12
                 px-12 h-[10dvh] lg:h-full">
                 <li className="text-center">
                     <Link to="/">
