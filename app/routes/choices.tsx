@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import type { Route } from "./+types/choices";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -13,10 +14,9 @@ export function meta({ }: Route.MetaArgs) {
 const Choices = () => {
     return (
         <main>
-            <Link to="/">
-                Return to title screen
-            </Link>
-            <div className="">choices</div>
+            <div className="flex justify-center items-center h-full">
+                <h1>Choose an option</h1>
+            </div>
         </main>
 
     )
