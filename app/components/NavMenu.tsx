@@ -1,26 +1,39 @@
-import { Link } from "react-router"
+import { NavLink } from "react-router"
 
 const NavMenu = () => {
     return (
         <nav className="py-6 border-b-2 lg:border-r-2 border-black">
             <ul className="flex lg:flex-col justify-center md:gap-12
                 px-12 h-[10dvh] lg:h-full">
-                <li className="text-center">
-                    <Link to="/">
-                        Return to title screen
-                    </Link>
-                </li>
-                <li className="text-center">
-                    Link 1
-                </li>
-                <li className="text-center">
-                    Link 2
-                </li>
-                <li className="text-center">
-                    Link 3
-                </li>
+
+                <NavLink to="/">
+                    <li className="text-center">
+                        Return to home screen
+                    </li>
+                </NavLink>
+
+                <NavLink to="/booksList">
+                    {({ isActive }) => (
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>
+                            Books
+                        </li>
+                    )}
+                </NavLink>
+
+                <NavLink to="/tasks">
+                    {({ isActive }) => (
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>Link 2</li>
+                    )}
+                </NavLink>
+
+                <NavLink to="/tasks">
+                    {({ isActive }) => (
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>Link 3</li>
+                    )}
+                </NavLink>
+
             </ul>
-        </nav>
+        </nav >
     )
 }
 
