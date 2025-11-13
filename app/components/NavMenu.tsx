@@ -7,14 +7,14 @@ const NavMenu = () => {
                 px-12 lg:h-full">
 
                 <NavLink to="/">
-                    <li className="text-center">
+                    <li className="hidden md:flex text-center">
                         Return to home screen
                     </li>
                 </NavLink>
 
                 <NavLink to="/booksList">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl px-4 px2" : "text-center"}>
                             Books
                         </li>
                     )}
@@ -22,13 +22,13 @@ const NavMenu = () => {
 
                 <NavLink to="/tasks">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>Link 2</li>
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl px-4 px2" : "text-center"}>Link 2</li>
                     )}
                 </NavLink>
 
                 <NavLink to="/tasks">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>Link 3</li>
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl px-4 px2" : "text-center"}>Link 3</li>
                     )}
                 </NavLink>
 

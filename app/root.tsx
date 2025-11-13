@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="font-serif">
+      <body className="md:text-2xl">
         {children}
         <ScrollRestoration />
         <Scripts />
