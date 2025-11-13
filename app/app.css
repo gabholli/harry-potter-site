@@ -7,7 +7,7 @@
 @font-face {
     font-family: Medieval;
     font-style: normal;
-    font-weight: 200 700;
+    font-weight: 200;
     font-display: swap;
     src: url("/public/MedievalSharp-Regular.ttf");
 }
