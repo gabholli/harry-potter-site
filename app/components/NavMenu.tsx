@@ -28,7 +28,7 @@ const NavMenu = () => {
                     )}
                 </NavLink>
 
-                <NavLink to="/">
+                <NavLink to="/housesList">
                     {({ isActive }) => (
                         <li className={isActive ? "text-blue-900 underline text-center rounded-xl" : "text-center"}>
                             Houses
@@ -36,9 +36,9 @@ const NavMenu = () => {
                     )}
                 </NavLink>
 
-                <NavLink to="/">
+                <NavLink to="/spellList">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>
+                        <li className={isActive ? "text-blue-900 underline text-center rounded-xl" : "text-center"}>
                             Spells
                         </li>
                     )}
