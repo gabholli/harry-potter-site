@@ -14,21 +14,33 @@ const NavMenu = () => {
 
                 <NavLink to="/booksList">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl px-4 px2" : "text-center"}>
+                        <li className={isActive ? "text-blue-900 underline text-center rounded-xl" : "text-center"}>
                             Books
                         </li>
                     )}
                 </NavLink>
 
-                <NavLink to="/tasks">
+                <NavLink to="/charactersList">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl px-4 px2" : "text-center"}>Link 2</li>
+                        <li className={isActive ? "text-blue-900 underline text-center rounded-xl" : "text-center"}>
+                            Characters
+                        </li>
                     )}
                 </NavLink>
 
-                <NavLink to="/tasks">
+                <NavLink to="/">
                     {({ isActive }) => (
-                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl px-4 px2" : "text-center"}>Link 3</li>
+                        <li className={isActive ? "text-blue-900 underline text-center rounded-xl" : "text-center"}>
+                            Houses
+                        </li>
+                    )}
+                </NavLink>
+
+                <NavLink to="/">
+                    {({ isActive }) => (
+                        <li className={isActive ? "bg-red-800 text-white text-center rounded-xl" : "text-center"}>
+                            Spells
+                        </li>
                     )}
                 </NavLink>
 
