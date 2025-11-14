@@ -21,7 +21,7 @@ export const clientLoader = async ({
 }
 
 export const HydrateFallback = () => {
-    return <div>Loading...</div>
+    return <h1 className="flex justify-center items-center">Loading...</h1>
 }
 
 export const booksList = ({
@@ -42,7 +42,7 @@ export const booksList = ({
     console.log(books)
 
     return (
-        <main>
+        <main className="flex flex-col items-center md:justify-center gap-4 mt-4">
             {books}
         </main>
     )

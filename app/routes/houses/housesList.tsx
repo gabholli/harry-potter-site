@@ -11,7 +11,7 @@ export const meta = ({ }: Route.MetaArgs) => {
 }
 
 export const HydrateFallback = () => {
-    return <div>Loading...</div>
+    return <h1 className="flex justify-center items-center">Loading...</h1>
 }
 
 const housesList = () => {
