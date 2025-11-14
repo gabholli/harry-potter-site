@@ -20,6 +20,10 @@ export const clientLoader = async ({
     return product
 }
 
+export const HydrateFallback = () => {
+    return <div>Loading...</div>
+}
+
 export const booksList = ({
     loaderData,
 }: Route.ComponentProps) => {
