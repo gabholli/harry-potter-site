@@ -1,4 +1,4 @@
-import type { Route } from "./+types/characterList";
+import type { Route } from "./+types/characterList"
 
 export const meta = ({ }: Route.MetaArgs) => {
     return [
