@@ -14,7 +14,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return <main className="flex flex-col justify-center items-center min-h-dvh">
     <Link
-      className="hover:underline md:text-2xl"
+      className="hover:underline md:text-2xl text-shadow-xs"
       to="choices">
       Welcome to the Harry Potter Universe
     </Link>
