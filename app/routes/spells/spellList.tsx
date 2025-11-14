@@ -1,4 +1,4 @@
-import type { Route } from "./+types/spellList";
+import type { Route } from "./+types/spellList"
 
 export const meta = ({ }: Route.MetaArgs) => {
     return [
@@ -8,6 +8,10 @@ export const meta = ({ }: Route.MetaArgs) => {
             content: "Find the latest about Harry Potter!"
         },
     ]
+}
+
+export const HydrateFallback = () => {
+    return <div>Loading...</div>
 }
 
 const spellList = () => {

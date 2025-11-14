@@ -10,6 +10,10 @@ export const meta = ({ }: Route.MetaArgs) => {
     ]
 }
 
+export const HydrateFallback = () => {
+    return <div>Loading...</div>
+}
+
 const characterList = () => {
     return (
         <div>characterList</div>
