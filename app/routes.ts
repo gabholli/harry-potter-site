@@ -10,7 +10,7 @@ export default [
             route("/:index", "routes/books/bookDetail.tsx"),
         ]),
 
-        ...prefix("characterList", [
+        ...prefix("charactersList", [
             index("routes/characters/characterList.tsx"),
         ]),
 
