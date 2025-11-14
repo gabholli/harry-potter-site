@@ -32,7 +32,7 @@ export const booksList = ({
         return (
             <div key={book.number}>
                 <Link to={`${book.index}`}>
-                    <h1 className="hover:underline lg:p-4">{book.title}</h1>
+                    <h1 className="hover:underline lg:py-4 lg:px-6">{book.title}</h1>
                 </Link>
             </div >
         )
