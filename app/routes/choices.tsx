@@ -15,7 +15,7 @@ const Choices = () => {
     return (
         <main>
             <div className="flex justify-center items-center h-full">
-                <h1 className="text-shadow-xs">Choose an option</h1>
+                <h1>Choose an option</h1>
             </div>
         </main>
 
