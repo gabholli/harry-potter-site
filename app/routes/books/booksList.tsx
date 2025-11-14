@@ -32,7 +32,7 @@ export const booksList = ({
         return (
             <div key={book.number}>
                 <Link to={`${book.index}`}>
-                    <h1 className="hover:underline">{book.title}</h1>
+                    <h1 className="hover:underline lg:p-4">{book.title}</h1>
                 </Link>
             </div >
         )
@@ -42,8 +42,11 @@ export const booksList = ({
     console.log(books)
 
     return (
-        <main className="flex flex-col items-center md:justify-center gap-4 mt-4">
-            {books}
+        <main className="flex flex-col items-center md:justify-center">
+            <div className="flex flex-col items-center justify-center gap-y-4 mt-4
+                lg:grid lg:grid-cols-2">
+                {books}
+            </div>
         </main>
     )
 }
