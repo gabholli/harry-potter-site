@@ -11,3 +11,7 @@
     font-display: swap;
     src: url("/public/MedievalSharp-Regular.ttf");
 }
+
+@theme {
+    --breakpoint-3xl: 160rem;
+}
