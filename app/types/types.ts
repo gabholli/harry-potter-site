@@ -1,4 +1,4 @@
-interface BooksInterface {
+export interface BooksInterface {
     number: number
     title: string
     originalTitle: string
@@ -6,5 +6,16 @@ interface BooksInterface {
     description: string
     pages: number
     cover: string
+    index: number
+}
+
+export interface CharacterInterface {
+    fullName: string
+    nickname: string
+    hogwartshouse: string
+    interpretedBy: string
+    children: string[]
+    image: string
+    birthdate: string
     index: number
 }
