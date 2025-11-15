@@ -19,3 +19,18 @@ export interface CharacterInterface {
     birthdate: string
     index: number
 }
+
+export interface HouseInterface {
+    house: string
+    emoji: string
+    founder: string
+    colors: string[]
+    animal: string
+    index: number
+}
+
+export interface SpellInterface {
+    spell: string
+    use: string
+    index: number
+}

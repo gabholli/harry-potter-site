@@ -12,10 +12,12 @@ export default [
 
         ...prefix("charactersList", [
             index("routes/characters/characterList.tsx"),
+            route("/:index", "routes/characters/characterDetail.tsx"),
         ]),
 
         ...prefix("housesList", [
             index("routes/houses/housesList.tsx"),
+            route("/:index", "routes/houses/houseDetail.tsx"),
         ]),
 
         ...prefix("spellList", [

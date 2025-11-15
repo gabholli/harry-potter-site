@@ -1,3 +1,4 @@
+import type { SpellInterface } from "~/types/types"
 import type { Route } from "./+types/spellList"
 
 export const meta = ({ }: Route.MetaArgs) => {
@@ -8,6 +9,14 @@ export const meta = ({ }: Route.MetaArgs) => {
             content: "Find the latest about Harry Potter!"
         },
     ]
+}
+
+export const clientLoader = async ({
+    params,
+}: Route.ClientLoaderArgs) => {
+    const res = await fetch("https://potterapi-fedeperin.vercel.app/en/spells?max=18")
+    const product = await res.json()
+    return product
 }
 
 export const HydrateFallback = () => {
@@ -22,9 +31,29 @@ export const HydrateFallback = () => {
     )
 }
 
-const spellList = () => {
+export const spellList = ({
+    loaderData,
+}: Route.ComponentProps) => {
+
+    const spells = loaderData?.map((item: SpellInterface) => {
+        return (
+            <div key={item.index}>
+                <p>
+                    <h1 className="lg:py-4 lg:px-6">{item.spell}</h1>
+                </p>
+            </div>
+        )
+
+    })
+
+
     return (
-        <div>spellList</div>
+        <main className="flex flex-col items-center md:justify-center">
+            <div className="flex flex-col items-center justify-center gap-y-4 mt-4 mb-4
+                lg:grid lg:grid-cols-3 3xl:flex">
+                {spells}
+            </div>
+        </main>
     )
 }
 
