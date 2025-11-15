@@ -12,9 +12,10 @@ export const meta = ({ }: Route.MetaArgs) => {
 }
 
 export default function Home() {
-  return <main className="flex flex-col justify-center items-center min-h-dvh">
+  return <main className="flex flex-col justify-center items-center min-h-dvh
+  bg-[url(/black-background.jpg)] bg-center bg-no-repeat bg-cover">
     <Link
-      className="hover:underline md:text-xl xl:text-2xl 3xl:text-6xl"
+      className="hover:underline md:text-xl xl:text-2xl 3xl:text-6xl text-white"
       to="choices">
       Welcome to the Harry Potter Universe
     </Link>
