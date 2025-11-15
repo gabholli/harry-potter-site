@@ -14,7 +14,7 @@ export const meta = ({ }: Route.MetaArgs) => {
 export const clientLoader = async ({
     params,
 }: Route.ClientLoaderArgs) => {
-    const res = await fetch("https://potterapi-fedeperin.vercel.app/en/spells?max=18")
+    const res = await fetch("https://potterapi-fedeperin.vercel.app/en/spells?max=12")
     const product = await res.json()
     return product
 }
@@ -37,10 +37,10 @@ export const spellList = ({
 
     const spells = loaderData?.map((item: SpellInterface) => {
         return (
-            <div key={item.index}>
-                <p>
-                    <h1 className="lg:py-4 lg:px-6">{item.spell}</h1>
-                </p>
+            <div key={item.index}
+                className="flex flex-col justify-center items-center">
+                <h1 className="lg:py-4 lg:px-6 underline">{item.spell}</h1>
+                <p>{item.use}</p>
             </div>
         )
 
