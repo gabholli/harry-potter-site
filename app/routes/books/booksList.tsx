@@ -48,7 +48,7 @@ export const booksList = ({
     })
 
     return (
-        <main className="flex flex-col items-center md:justify-center">
+        <main className="flex flex-col items-center md:justify-center text-white">
             <div className="flex flex-col items-center justify-center gap-y-4 mt-4
                 lg:grid lg:grid-cols-2 3xl:flex">
                 {books}
