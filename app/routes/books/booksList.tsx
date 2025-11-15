@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import type { Route } from "./+types/booksList";
+import type { BooksInterface } from "~/types/types";
 
 export const meta = ({ }: Route.MetaArgs) => {
     return [
@@ -16,7 +17,6 @@ export const clientLoader = async ({
 }: Route.ClientLoaderArgs) => {
     const res = await fetch("https://potterapi-fedeperin.vercel.app/en/books")
     const product = await res.json()
-    console.log(product)
     return product
 }
 
@@ -46,8 +46,6 @@ export const booksList = ({
         )
 
     })
-
-    console.log(books)
 
     return (
         <main className="flex flex-col items-center md:justify-center">
