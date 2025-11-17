@@ -34,3 +34,14 @@ export interface SpellInterface {
     use: string
     index: number
 }
+
+export interface BookDetailInterface {
+    cover: string
+    description: string
+    index: number
+    number: number
+    originalTitle: string
+    pages: number
+    releaseDate: string
+    title: string
+}
