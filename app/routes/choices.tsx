@@ -14,7 +14,7 @@ export const meta = ({ }: Route.MetaArgs) => {
 const Choices = () => {
     return (
         <main>
-            <div className="flex justify-center items-center h-full text-white">
+            <div className="flex justify-center items-center h-full text-white font-bold">
                 <h1>Choose an option</h1>
             </div>
         </main>
