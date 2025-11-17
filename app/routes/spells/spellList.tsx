@@ -44,7 +44,7 @@ export const spellList = ({
         <main className="flex flex-col items-center md:justify-center text-white">
             <div className="flex flex-col items-center justify-center mt-4 mb-4
                 lg:my-0 gap-y-4 lg:gap-y-0
-                lg:grid lg:grid-cols-3 3xl:flex lg:p-24">
+                lg:grid lg:grid-cols-3 3xl:flex px-24">
                 {spells}
             </div>
         </main>
