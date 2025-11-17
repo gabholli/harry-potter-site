@@ -40,7 +40,7 @@ export const characterList = ({
         return (
             <div key={character.index}>
                 <Link to={`${character.index}`}>
-                    <h1 className="hover:underline lg:py-4">{character.fullName}</h1>
+                    <h1 className="hover:underline lg:py-4 font-bold">{character.fullName}</h1>
                 </Link>
             </div>
         )

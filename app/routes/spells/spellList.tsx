@@ -39,7 +39,7 @@ export const spellList = ({
         return (
             <div key={item.index}
                 className="flex flex-col justify-center items-center text-center">
-                <h1 className="lg:py-4 lg:px-6 underline">{item.spell}</h1>
+                <h1 className="lg:py-4 lg:px-6 underline font-bold">{item.spell}</h1>
                 <p>{item.use}</p>
             </div>
         )

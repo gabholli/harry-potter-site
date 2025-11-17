@@ -40,7 +40,7 @@ export const housesList = ({
         return (
             <div key={item.index}>
                 <Link to={`${item.index}`}>
-                    <h1 className="hover:underline lg:py-4">{item.house}</h1>
+                    <h1 className="hover:underline lg:py-4 font-bold">{item.house}</h1>
                 </Link>
             </div>
         )
