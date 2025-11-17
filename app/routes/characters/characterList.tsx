@@ -38,7 +38,8 @@ export const characterList = ({
 
     const characters = loaderData?.map((character: CharacterInterface) => {
         return (
-            <div key={character.index}>
+            <div
+                key={character.index}>
                 <Link to={`${character.index}`}>
                     <h1 className="hover:underline lg:py-4 font-bold">{character.fullName}</h1>
                 </Link>
@@ -51,7 +52,7 @@ export const characterList = ({
 
     return (
         <main className="flex flex-col items-center md:justify-center text-white">
-            <div className="flex flex-col items-center justify-center gap-y-4 mt-4 mb-4
+            <div className="flex flex-col items-center justify-center gap-10 mt-4 mb-4
                 lg:grid lg:grid-cols-3 lg:mx-24 lg:my-0 lg:gap-y-2 3xl:flex">
                 {characters}
             </div>
