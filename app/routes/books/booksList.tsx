@@ -17,6 +17,8 @@ export const clientLoader = async ({
 }: Route.ClientLoaderArgs) => {
     const res = await fetch("https://potterapi-fedeperin.vercel.app/en/books")
     const product = await res.json()
+    console.log(product)
+
     return product
 }
 

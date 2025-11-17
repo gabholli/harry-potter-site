@@ -17,6 +17,7 @@ export const clientLoader = async ({
 }: Route.ClientLoaderArgs) => {
     const res = await fetch("https://potterapi-fedeperin.vercel.app/en/characters")
     const product = await res.json()
+    console.log(product)
     return product
 }
 
@@ -40,8 +41,6 @@ export const characterList = ({
         )
 
     })
-
-    console.log(characters)
 
     return (
         <main className="flex flex-col items-center md:justify-center text-white">
