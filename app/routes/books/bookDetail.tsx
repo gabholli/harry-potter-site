@@ -46,7 +46,7 @@ const bookDetail = ({
                     <p className="text-left indent-10">{description}</p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-y-4
-                    lg:flex-row gap-x-10 mt-10">
+                    lg:flex-row gap-x-8 mt-10">
                     <h1 className="font-bold">Original Title:</h1>
                     <p>{originalTitle}</p>
                     <h1 className="font-bold">Pages:</h1>
