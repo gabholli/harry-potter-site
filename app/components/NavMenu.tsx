@@ -2,7 +2,7 @@ import { NavLink } from "react-router"
 
 const NavMenu = () => {
     return (
-        <nav className="border-b-2 lg:border-r-2 border-black flex justify-center items-center bg-lime-50 font-bold">
+        <nav className="border-b-2 lg:border-r-2 border-black flex justify-center items-center bg-white font-bold">
             <ul className="flex lg:flex-col justify-center gap-2 md:gap-12
                 px-12 lg:h-full">
 
