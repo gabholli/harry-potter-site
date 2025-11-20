@@ -13,7 +13,7 @@ export const meta = ({ }: Route.MetaArgs) => {
 
 export default function Home() {
   return <main className="flex flex-col justify-center items-center min-h-dvh
-  bg-[url(/black-background.jpg)] bg-center bg-no-repeat bg-cover bg-black/50 bg-blend-overlay bg-fixed">
+  bg-black">
     <Link
       className="hover:underline md:text-xl xl:text-2xl 3xl:text-6xl text-white font-bold"
       to="choices">
