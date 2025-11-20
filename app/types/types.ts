@@ -45,3 +45,12 @@ export interface BookDetailInterface {
     releaseDate: string
     title: string
 }
+
+export interface CharacterDetailInterface {
+    birthdate: string
+    children: string[]
+    fullName: string
+    hogwartsHouse: string
+    image: string
+    nickname: string
+}
