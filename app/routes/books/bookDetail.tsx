@@ -37,26 +37,51 @@ const bookDetail = ({
     }: BookDetailInterface = loaderData
 
     return (
-        <main className="text-white flex flex-col justify-center items-center gap-y-6 p-6 text-center">
-            <h1 className="font-bold">{title}</h1>
-            <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-col justify-center items-center gap-y-4
-                    3xl:w-full 
-                    lg:flex-row lg:w-2xl 3xl:flex-col 3xl:px-20">
-                    <img className="lg:pr-20" src={cover} alt="Book cover" />
-                    <p className="text-left indent-10 px-2 lg:px-0">{description}</p>
+        <main className="flex justify-center items-center h-full">
+            <div className="lg:grid grid-cols-6 grid-rows-[50px_1fr_50px] gap-4 text-white
+                flex flex-col justify-center items-center text-center gap-y-4 my-6">
+                <div className="col-span-6">
+                    <h1 className="font-bold">{title}</h1>
                 </div>
-                <div className="hidden lg:flex flex-col justify-center items-center gap-y-4
-                    lg:flex-row gap-x-8 mt-6 mx-40">
-                    <h1 className="font-bold">Original Title:</h1>
-                    <p>{originalTitle}</p>
-                    <h1 className="font-bold">Pages:</h1>
-                    <p>{pages}</p>
-                    <h1 className="font-bold">Release Date:</h1>
-                    <p>{releaseDate}</p>
+                <div className="col-span-2 col-start-2 row-start-2">
+                    <img className="" src={cover} alt="Book cover" />
                 </div>
-
+                <div className="col-span-2 col-start-4 row-start-2">
+                    <p className="text-left indent-10 px-4 lg:px-0">{description}</p>
+                </div>
+                <div className="col-span-6 row-start-3">
+                    <div className="flex flex-col justify-center items-center gap-y-4
+                     lg:flex-row gap-x-6 my-6 mx-24">
+                        <h1 className="font-bold">Original Title:</h1>
+                        <p>{originalTitle}</p>
+                        <h1 className="font-bold">Pages:</h1>
+                        <p>{pages}</p>
+                        <h1 className="font-bold">Release Date:</h1>
+                        <p>{releaseDate}</p>
+                    </div>
+                </div>
             </div>
+            {/* // <main className="text-white flex flex-col justify-center items-center gap-y-6 p-6 text-center">
+        //     <h1 className="font-bold">{title}</h1>
+        //     <div className="flex flex-col justify-center items-center">
+        //         <div className="flex flex-col justify-center items-center gap-y-4
+        //             3xl:w-full 
+        //             lg:flex-row lg:w-4xl 3xl:flex-col 3xl:px-20 lg:pr-44">
+        //             <img className="lg:pr-10 float-left" src={cover} alt="Book cover" />
+        //             <p className="text-left indent-10 px-4 lg:px-0">{description}</p>
+        //         </div>
+        //         <div className="flex flex-col justify-center items-center gap-y-4
+        //             lg:flex-row gap-x-8 mt-6">
+        //             <h1 className="font-bold">Original Title:</h1>
+        //             <p>{originalTitle}</p>
+        //             <h1 className="font-bold">Pages:</h1>
+        //             <p>{pages}</p>
+        //             <h1 className="font-bold">Release Date:</h1>
+        //             <p>{releaseDate}</p>
+        //         </div>
+
+        //     </div>
+        // </main> */}
         </main>
     )
 }
