@@ -43,7 +43,7 @@ const bookDetail = ({
                 <div className="col-span-10">
                     <h1 className="font-bold">{title}</h1>
                 </div>
-                <div className="col-span-3 col-start-3 row-start-2">
+                <div className="col-span-3 col-start-3 row-start-2 lg:my-12">
                     <img className="" src={cover} alt="Book cover" />
                 </div>
                 <div className="col-span-3 col-start-6 row-start-2">
