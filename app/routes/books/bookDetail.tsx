@@ -47,7 +47,7 @@ const bookDetail = ({
                     <img className="" src={cover} alt="Book cover" />
                 </div>
                 <div className="col-span-3 col-start-6 row-start-2">
-                    <p className="text-left indent-10 px-4 lg:px-0">{description}</p>
+                    <p className="text-left px-4 lg:px-0">{description}</p>
                 </div>
                 <div className="col-span-10 row-start-3">
                     <div className="flex flex-col justify-center items-center gap-y-4
