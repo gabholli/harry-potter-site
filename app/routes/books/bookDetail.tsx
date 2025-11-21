@@ -37,7 +37,7 @@ const bookDetail = ({
     }: BookDetailInterface = loaderData
 
     return (
-        <main className="flex justify-center items-center h-full text-white">
+        <main className="flex justify-center items-center h-full text-white 3xl:text-4xl">
             <div className="lg:grid grid-cols-10 grid-rows-[50px_1fr_50px] gap-4
                 flex flex-col justify-center items-center text-center gap-y-4 my-4">
                 <div className="col-span-10">
