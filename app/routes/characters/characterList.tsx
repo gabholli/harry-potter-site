@@ -45,7 +45,7 @@ export const characterList = ({
     return (
         <main className="flex flex-col items-center md:justify-center text-white">
             <div className="flex flex-col items-center justify-center gap-10 mt-4 mb-4
-                lg:grid lg:grid-cols-3 lg:mx-24 lg:my-0 lg:gap-y-2 3xl:flex">
+                lg:grid lg:grid-cols-3 lg:mx-24 lg:my-0 lg:gap-y-2">
                 {characters}
             </div>
         </main>
