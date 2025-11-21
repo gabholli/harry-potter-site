@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    --font-medieval: "Medieval", sans-serif;
+    --font-medieval: "Medieval", serif;
+    --font-garamond: "Garamond", serif;
 }
 
 @font-face {
@@ -10,6 +11,14 @@
     font-weight: 200;
     font-display: swap;
     src: url("/MedievalSharp-Regular.ttf");
+}
+
+@font-face {
+    font-family: Garamond;
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/EBGaramond-Regular.ttf");
 }
 
 @theme {
