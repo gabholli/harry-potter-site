@@ -54,3 +54,11 @@ export interface CharacterDetailInterface {
     image: string
     nickname: string
 }
+
+export interface HouseDetailInterface {
+    animal: string
+    colors: string[]
+    emoji: string
+    founder: string
+    house: string
+}
