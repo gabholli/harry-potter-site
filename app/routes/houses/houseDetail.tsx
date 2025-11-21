@@ -44,11 +44,9 @@ const houseDetail = ({
     return (
         <main className="flex flex-col justify-center items-center h-full text-white gap-y-4">
             <h1><span className="font-bold">House Name: </span>{house}</h1>
+            <h1><span className="font-bold">House Emoji: </span>{emoji}</h1>
             <h1><span className="font-bold">House Animal: </span>{animal}</h1>
-
             <h1><span className="font-bold">House Founder: </span>{founder}</h1>
-
-
         </main>
     )
 }
