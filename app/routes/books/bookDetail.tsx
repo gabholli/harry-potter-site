@@ -38,18 +38,18 @@ const bookDetail = ({
 
     return (
         <main className="flex justify-center items-center h-full text-white">
-            <div className="lg:grid grid-cols-10 grid-rows-[50px_1fr_50px] 3xl:gap-x-40
+            <div className="lg:grid grid-cols-6 grid-rows-[50px_1fr_50px] 3xl:gap-x-40
                 flex flex-col justify-center items-center text-center gap-y-4 my-4">
-                <div className="col-span-10 3xl:mb-29">
+                <div className="col-span-6 3xl:mb-29">
                     <h1 className="font-bold">{title}</h1>
                 </div>
-                <div className="col-span-3 col-start-3 row-start-2 lg:my-12">
+                <div className="col-span-2 col-start-2 row-start-2 lg:my-12">
                     <img className="3xl:size-full" src={cover} alt="Book cover" />
                 </div>
-                <div className="col-span-3 col-start-6 row-start-2">
-                    <p className="text-left px-4 lg:px-0 3xl:leading-20 indent-8">{description}</p>
+                <div className="col-span-2 col-start-4 row-start-2">
+                    <p className="text-left px-4 lg:px-0 3xl:leading-18 indent-8">{description}</p>
                 </div>
-                <div className="col-span-10 row-start-3">
+                <div className="col-span-6 row-start-3">
                     <div className="flex flex-col justify-center items-center gap-y-4
                      lg:flex-row gap-x-6 my-6 mx-24 3xl:mt-20">
                         <h1 className="font-bold">Original Title:</h1>
