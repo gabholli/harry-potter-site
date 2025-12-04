@@ -43,7 +43,7 @@ const bookDetail = ({
                 <div className="col-span-6 3xl:mb-29">
                     <h1 className="font-bold">{title}</h1>
                 </div>
-                <div className="col-span-2 col-start-2 row-start-2 lg:my-12">
+                <div className="col-span-2 col-start-2 row-start-2 lg:my-12 xl:flex xl:justify-center xl:items-center">
                     <img className="3xl:size-full" src={cover} alt="Book cover" />
                 </div>
                 <div className="col-span-2 col-start-4 row-start-2">
